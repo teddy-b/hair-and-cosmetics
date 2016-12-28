@@ -1,14 +1,15 @@
-# HairAndCosmetics
+# Course Project - SPA Applications with Angular 2 - 2016
 
-# Course Project - SPA Applications with Angular 2 2016
+## HairAndCosmetics
 
-# Team - "Directive12" Members
+## Team - "Directive12" Members
 
 | Name | NickName | GitHub |
 | :------------- | :------------------- | :------------------------------------------|
 | Теодора Бонева | teddyboneva  | [Teodora Boneva](https://github.com/teddy-b) |
 | Ангелина Грозданова | grozdanova  | [grozdanova](https://github.com/grozdanova) |
 | Йовко Господинов | yovko.gospodinov | [YovkoGospodinov](https://github.com/YovkoGospodinov) |
+
 
 This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.24.
 
