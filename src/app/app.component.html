@@ -1,3 +1,20 @@
-<h1>
-  {{title}}
-</h1>
+<md-sidenav-container class="example-container">
+  <md-sidenav #sidenav mode="push" class="example-sidenav">
+    <md-list>
+      <md-list-item><a routerLink="/home">Home</a></md-list-item>
+      <md-list-item><a routerLink="/hair">Hair</a></md-list-item>
+      <md-list-item><a routerLink="/manicure">Manicure</a></md-list-item>
+    </md-list>
+  </md-sidenav>
+  <div class="sidenav-content">
+    <md-toolbar color="primary">
+      <button md-icon-button (click)="sidenav.open()">
+        <md-icon>menu</md-icon>
+      </button>
+      <span>{{title}}</span>
+      <span class="example-fill-remaining-space"></span>
+      <span>Login</span>
+    </md-toolbar>
+  </div>
+  <router-outlet></router-outlet>
+</md-sidenav-container>

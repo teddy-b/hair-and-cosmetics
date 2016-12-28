@@ -1,0 +1,19 @@
+md-sidenav-container {
+  height: 100vh;
+}
+
+md-sidenav {
+  width: 20vw;
+}
+
+.md-sidenav-backdrop.md-sidenav-shown {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+/*.sidenav-content {*/
+  /*width: 80vw !important;*/
+/*}*/
+
+.example-fill-remaining-space {
+  flex: 1 1 auto;
+}

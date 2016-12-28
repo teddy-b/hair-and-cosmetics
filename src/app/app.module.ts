@@ -3,16 +3,30 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
+import {MaterialModule} from '@angular/material';
+
 import { AppComponent } from './app.component';
+import { HomeComponent } from './home/home.component';
+
+import { AppRoutingModule } from './app-routing.module';
+import { HairComponent } from './hair/hair.component';
+import { ManicureComponent } from './manicure/manicure.component';
+
+import 'hammerjs';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HomeComponent,
+    HairComponent,
+    ManicureComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    AppRoutingModule,
+    MaterialModule.forRoot(),
   ],
   providers: [],
   bootstrap: [AppComponent]
