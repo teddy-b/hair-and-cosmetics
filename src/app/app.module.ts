@@ -5,10 +5,9 @@ import { HttpModule } from '@angular/http';
 
 import {MaterialModule} from '@angular/material';
 
+import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
-
-import { AppRoutingModule } from './app-routing.module';
 import { HairComponent } from './hair/hair.component';
 import { ManicureComponent } from './manicure/manicure.component';
 

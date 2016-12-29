@@ -3,7 +3,7 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-hair',
   templateUrl: './hair.component.html',
-  styleUrls: ['./hair.component.css']
+  styleUrls: ['./hair.component.scss']
 })
 export class HairComponent implements OnInit {
 

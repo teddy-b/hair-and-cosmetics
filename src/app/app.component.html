@@ -1,19 +1,27 @@
 <md-sidenav-container class="example-container">
-  <md-sidenav #sidenav mode="push" class="example-sidenav">
+  <md-sidenav #sidenav mode="side" class="example-sidenav">
     <md-list>
-      <md-list-item><a routerLink="/home">Home</a></md-list-item>
+      <md-list-item>
+        <a routerLink="/home">Home</a>
+        <span class="fill-remaining-space"></span>
+        <button md-icon-button (click)="sidenav.close()">
+          <i class="material-icons">cancel</i>
+        </button>
+      </md-list-item>
       <md-list-item><a routerLink="/hair">Hair</a></md-list-item>
       <md-list-item><a routerLink="/manicure">Manicure</a></md-list-item>
     </md-list>
   </md-sidenav>
   <div class="sidenav-content">
     <md-toolbar color="primary">
-      <button md-icon-button (click)="sidenav.open()">
-        <md-icon>menu</md-icon>
+      <button md-icon-button (click)="sidenav.toggle()">
+        <i class="material-icons">menu</i>
       </button>
       <span>{{title}}</span>
-      <span class="example-fill-remaining-space"></span>
-      <span>Login</span>
+      <span class="fill-remaining-space"></span>
+      <button md-icon-button (click)="login" mdTooltip="Login">
+        <i class="material-icons">input</i>
+      </button>
     </md-toolbar>
   </div>
   <router-outlet></router-outlet>
