@@ -1,6 +1,14 @@
-# HairAndCosmetics
+# Course Project - SPA Applications with Angular 2 - 2016 - Hair And Cosmetics Site
 
 This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.24.
+
+## Team "Directive12" Members
+
+| Name | NickName | GitHub |
+| :------------- | :------------------- | :------------------------------------------|
+| Теодора Бонева | teddyboneva  | [Teodora Boneva](https://github.com/teddy-b) |
+| Ангелина Грозданова | grozdanova  | [grozdanova](https://github.com/grozdanova) |
+| Йовко Господинов | yovko.gospodinov | [YovkoGospodinov](https://github.com/YovkoGospodinov) |
 
 ## Development server
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
