@@ -12,13 +12,15 @@ import { HairComponent } from './hair/hair.component';
 import { ManicureComponent } from './manicure/manicure.component';
 
 import 'hammerjs';
+import { UserProfileComponent } from './user-profile/user-profile.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     HairComponent,
-    ManicureComponent
+    ManicureComponent,
+    UserProfileComponent
   ],
   imports: [
     BrowserModule,
