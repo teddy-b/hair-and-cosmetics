@@ -13,6 +13,8 @@ import { ManicureComponent } from './manicure/manicure.component';
 
 import 'hammerjs';
 import { UserProfileComponent } from './user-profile/user-profile.component';
+import { HairDetailsComponent } from './hair/hair-details/hair-details.component';
+import { ManicureDetailsComponent } from './manicure/manicure-details/manicure-details.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { UserProfileComponent } from './user-profile/user-profile.component';
     HomeComponent,
     HairComponent,
     ManicureComponent,
-    UserProfileComponent
+    UserProfileComponent,
+    HairDetailsComponent,
+    ManicureDetailsComponent
   ],
   imports: [
     BrowserModule,
