@@ -1,0 +1,21 @@
+@media only screen and (min-width: 768px) {
+  .user-profile md-card {
+    width: 80%;
+    margin: 20px auto;
+    display: flex;
+    flex-wrap: wrap;
+
+    md-card-header {
+      width: 100%;
+    }
+
+    img {
+      width: 50%;
+      height: 50%;
+    }
+
+    md-card-content {
+      width: 50%;
+    }
+  }
+}
