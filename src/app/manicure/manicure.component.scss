@@ -1,0 +1,32 @@
+.example-card {
+  width: 350px;
+  display: inline-block;
+  margin: 10px;
+
+}
+.h1 {
+    font-weight: bold;
+    font-size: 40pt;
+    color: #3f51b5;
+    text-align: center;
+}
+.bold {
+    font-weight: bold;
+    padding: 10px;
+}
+.price {
+    color: #3f51b5;
+}
+
+#hair-main {
+    display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20px;
+}
+#page-title {
+    text-align: center;
+}
+.btn {
+    color: #3f51b5;
+}
