@@ -5,7 +5,12 @@
 
 }
 
-.example-header-image {
-  background-image: url('assets/img/examples/shiba1.jpg');
-  background-size: cover;
+#hair-main {
+    display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20px;
+}
+#page-title {
+    text-align: center;
 }
