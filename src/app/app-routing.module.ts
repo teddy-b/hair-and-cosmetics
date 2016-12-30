@@ -14,7 +14,7 @@ const routes: Routes = [
   { path: 'hair', component: HairComponent },
   { path: 'hair/:id', component: HairDetailsComponent },
   { path: 'manicure', component: ManicureComponent },
-  { path: 'manicure/:id', component: ManicureComponent },
+  { path: 'manicure/:id', component: ManicureDetailsComponent },
   { path: 'profile', component: UserProfileComponent },
 ];
 
