@@ -1,6 +1,15 @@
 <p class="h1">
   Haircut offers
 </p>
+  <div><form class="selectSort">
+  <md-select placeholder="Sort" [(ngModel)]="selectedValue" name="food">
+    <md-option *ngFor="let food of foods" [value]="food.value">
+     <p> {{food.viewValue}}</p>
+    </md-option>
+  </md-select>
+
+  <p> Selected value: {{selectedValue}} </p>
+</form></div>
 <div id="hair-main">
   <md-card class="example-card">
     <md-card-header>

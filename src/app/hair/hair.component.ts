@@ -13,4 +13,5 @@ export class HairComponent implements OnInit {
   ngOnInit() {
   }
 
+
 }
