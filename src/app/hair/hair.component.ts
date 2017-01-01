@@ -1,4 +1,6 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+import { OfferModel } from '../models/offer-model';
+import { HairService } from '../services/hair.service';
 
 @Component({
   selector: 'app-hair',
@@ -7,10 +9,13 @@ import { Component, OnInit, ViewEncapsulation } from '@angular/core';
   encapsulation: ViewEncapsulation.None
 })
 export class HairComponent implements OnInit {
+  private data: OfferModel;
 
-  constructor() { }
+  constructor(private hairService: HairService) { }
 
   ngOnInit() {
+    // this.hairService.getAll()
+    //         .subscribe(resp => this.data = resp);
   }
 
 

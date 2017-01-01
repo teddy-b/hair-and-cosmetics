@@ -17,6 +17,8 @@ import { HairDetailsComponent } from './hair/hair-details/hair-details.component
 import { ManicureDetailsComponent } from './manicure/manicure-details/manicure-details.component';
 import { SortingPipePipe } from './Pipes/sorting-pipe.pipe';
 
+import { HairService } from './services/hair.service';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -35,7 +37,7 @@ import { SortingPipePipe } from './Pipes/sorting-pipe.pipe';
     AppRoutingModule,
     MaterialModule.forRoot(),
   ],
-  providers: [],
+  providers: [HairService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
