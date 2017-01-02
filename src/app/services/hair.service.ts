@@ -13,4 +13,9 @@ export class HairService {
   getAll() {
     return HairOffers;
   }
+  getById(id) {
+  let element = HairOffers.map(function(x) {return x.Id; }).indexOf(id);
+  let found = HairOffers[element];
+  return found;
+  }
 }

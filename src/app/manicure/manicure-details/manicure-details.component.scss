@@ -1,0 +1,36 @@
+.example-card {
+  width: 650px;
+  display: inline-block;
+  margin: 10px;
+
+}
+.example-header-image {
+  background-image: url('assets/img/friziorski-salon-sofia-bogdan-01.jpg');
+  background-size: cover;
+}
+.h1 {
+    font-weight: bold;
+    font-size: 40pt;
+    color: #3f51b5;
+    text-align: center;
+}
+.bold {
+    font-weight: bold;
+    padding: 10px;
+}
+.price {
+    color: #3f51b5;
+}
+.selectSort {
+    margin: 30px;
+}
+
+#hair-main {
+    display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20px;
+}
+#page-title {
+    text-align: center;
+}

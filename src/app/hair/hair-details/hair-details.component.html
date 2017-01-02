@@ -1,3 +1,30 @@
 <p>
   hair-details works!
 </p>
+<div id="hair-main" >
+  <md-card class="example-card" >
+    <md-card-header>
+      <div md-card-avatar class="example-header-image"></div>
+      <md-card-title>{{offer.StudioName}}</md-card-title>
+      <md-card-subtitle>Hair studios</md-card-subtitle>
+    </md-card-header>
+    <img md-card-image src="{{offer.Image}}">
+    <md-card-content>
+      <p class="bold">
+        {{offer.Title}}
+      </p>
+      <p>
+        {{offer.Description}}
+      </p>
+      
+      <div class="bold">Price: <span class="price"> {{offer.Price}} $</span></div>
+      
+    </md-card-content>
+    <md-card-actions>
+      <span class="url"><a href="{{offer.Url}}" md-raised-button color="accent" >Visit {{offer.StudioName}} Site!</a></span>
+    </md-card-actions>
+    <md-card-footer>
+      <div>Date of publish: {{offer.Date}}</div>
+    </md-card-footer>
+  </md-card>
+</div>
