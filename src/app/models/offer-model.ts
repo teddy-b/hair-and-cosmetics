@@ -1,7 +1,10 @@
 export interface OfferModel {
+    Id: string;
     StudioName: string;
+    Title: string;
     Image: string;
-    OfferTitle: string;
-    OfferDetails: string;
-    Price: number;
+    Description: string;
+    Price: string;
+    StudioUrl: string;
+    Date: string;
 }

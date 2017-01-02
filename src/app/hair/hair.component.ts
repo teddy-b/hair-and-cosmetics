@@ -9,13 +9,13 @@ import { HairService } from '../services/hair.service';
   encapsulation: ViewEncapsulation.None
 })
 export class HairComponent implements OnInit {
-  private data: OfferModel;
+  private hairOffers: OfferModel[];
 
   constructor(private hairService: HairService) { }
 
   ngOnInit() {
-    // this.hairService.getAll()
-    //         .subscribe(resp => this.data = resp);
+    this.hairOffers = this.hairService.getAll();
+    console.log(this.hairOffers);
   }
 
 
