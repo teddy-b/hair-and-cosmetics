@@ -9,6 +9,8 @@ import { ManicureDetailsComponent } from './manicure/manicure-details/manicure-d
 import { UserProfileComponent } from './user-profile/user-profile.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
+import { AboutComponent } from './about/about.component';
+import { TermsComponent } from './terms/terms.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -20,6 +22,8 @@ const routes: Routes = [
   { path: 'profile', component: UserProfileComponent },
   { path: 'login', component: LoginComponent },
   { path: 'register', component: RegisterComponent }
+   { path: 'about', component: AboutComponent },
+   { path: 'terms', component: TermsComponent }
 ];
 
 @NgModule({

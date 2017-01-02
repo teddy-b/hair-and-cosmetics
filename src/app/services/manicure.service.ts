@@ -12,5 +12,10 @@ export class ManicureService {
     getAll() {
     return ManicureOffers;
   }
+    getById(id) {
+  let element = ManicureOffers.map(function(x) {return x.Id; }).indexOf(id);
+  let found = ManicureOffers[element];
+  return found;
+  }
 
 }
