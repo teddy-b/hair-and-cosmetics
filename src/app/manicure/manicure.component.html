@@ -1,7 +1,7 @@
 <p class="h1">
   Manicure offers
 </p>
-  <div><form class="selectSort">
+  <!--<div><form class="selectSort">
   <md-select placeholder="Sort" [(ngModel)]="selectedValue" name="food">
     <md-option *ngFor="let food of foods" [value]="food.value">
      <p> {{food.viewValue}}</p>
@@ -9,10 +9,23 @@
   </md-select>
 
   <p> Selected value: {{selectedValue}} </p>
-</form></div>
+</form></div>-->
+
+<div class="input-group">
+    <label for="sort">Sort:</label>
+    <select class="form-control" name="sort" (change)="onSort($event)">
+        <option *ngFor="let property of sortBy"  [selected]="sortingBy===property" value="{{property}}">{{property}}</option>
+    </select>
+</div>
+<div class="input-group">
+    <label for="order">Order:</label>
+    <select class="form-control" name="order" (change)="onOrder($event)">
+        <option *ngFor="let order of orderBy" [selected]="orderingBy===order" value="{{order}}">{{order}}</option>
+    </select>
+</div>
 
 <div id="hair-main" >
-  <md-card class="example-card" *ngFor="let offer of manicureOffers" >
+  <md-card class="example-card" *ngFor="let offer of (manicureOffers | sortingPipe:[sortingBy, orderingBy])" >
     <md-card-header>
       <div md-card-avatar class="example-header-image"></div>
       <md-card-title>{{offer.StudioName}}</md-card-title>
