@@ -1,0 +1,24 @@
+@media only screen and (min-width: 768px) {
+  .register md-card {
+    width: 40%;
+    margin: 20px auto;
+    text-align: center;
+
+    md-input-container {
+      width: 80%;
+    }
+
+    .msg {
+      color: #f00;
+    }
+
+    a{
+      padding: 0 2%;
+      color: #3f51b5;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}

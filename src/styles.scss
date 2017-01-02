@@ -8,3 +8,9 @@ body {
 .fill-remaining-space {
   flex: 1 1 auto;
 }
+
+@media only screen and (max-width: 768px) {
+  .hidden-on-mobile {
+    display: none;
+  }
+}

@@ -1,0 +1,25 @@
+<div class="register">
+  <md-card class="example-card">
+    <md-card-header>
+      <div md-card-avatar class="example-header-image">
+        <i class="material-icons">account_circle</i>
+      </div>
+      <md-card-title>Register</md-card-title>
+      <md-card-subtitle>Regular user</md-card-subtitle>
+    </md-card-header>
+    <md-card-content>
+      <div class="msg">{{this.msg}}</div>
+      <div>
+        <md-input-container>
+          <input md-input placeholder="Email" [(ngModel)]="this.user.email">
+        </md-input-container>
+      </div>
+      <div>
+        <md-input-container>
+          <input md-input placeholder="Password" [(ngModel)]="this.user.password">
+        </md-input-container>
+      </div>
+      <button md-raised-button color="primary" (click)=register()>Register</button>
+    </md-card-content>
+  </md-card>
+</div>

@@ -1,15 +1,26 @@
-<div class="user-profile">
+<div class="user-profile" [hidden]="!this.loggedUser">
   <md-card class="example-card">
     <md-card-header>
-      <div md-card-avatar class="example-header-image"></div>
+      <div md-card-avatar class="example-header-image">
+        <i class="material-icons">account_circle</i>
+      </div>
       <md-card-title>My profile</md-card-title>
       <md-card-subtitle>Regular user</md-card-subtitle>
+      <span class="fill-remaining-space"></span>
+      <a md-icon-button mdTooltip="Edit profile">
+        <i class="material-icons">border_color</i>
+      </a>
     </md-card-header>
     <img md-card-image src="../../assets/img/user-profile-default-pic.png">
     <md-card-content>
-      <p>Name: name</p>
-      <p>Email: email</p>
-      <p>Age: age</p>
+      <p>Name:</p>
+      <p>Email: {{this.currentUser.email}}</p>
+      <p>Age:</p>
+      <p>Password:
+        <a md-icon-button mdTooltip="Change password">
+          <i class="material-icons">border_color</i>
+        </a>
+      </p>
       <button md-raised-button>My offers</button>
     </md-card-content>
   </md-card>

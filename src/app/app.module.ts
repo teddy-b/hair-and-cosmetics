@@ -19,6 +19,8 @@ import { SortingPipe } from './Pipes/sorting-pipe.pipe';
 
 import { HairService } from './services/hair.service';
 import { ManicureService } from './services/manicure.service';
+import { LoginComponent } from './login/login.component';
+import { RegisterComponent } from './register/register.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +31,9 @@ import { ManicureService } from './services/manicure.service';
     UserProfileComponent,
     HairDetailsComponent,
     ManicureDetailsComponent,
-    SortingPipe
+    SortingPipe,
+    LoginComponent,
+    RegisterComponent
   ],
   imports: [
     BrowserModule,
