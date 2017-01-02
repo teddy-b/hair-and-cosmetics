@@ -15,9 +15,10 @@ import 'hammerjs';
 import { UserProfileComponent } from './user-profile/user-profile.component';
 import { HairDetailsComponent } from './hair/hair-details/hair-details.component';
 import { ManicureDetailsComponent } from './manicure/manicure-details/manicure-details.component';
-import { SortingPipePipe } from './Pipes/sorting-pipe.pipe';
+import { SortingPipe } from './Pipes/sorting-pipe.pipe';
 
 import { HairService } from './services/hair.service';
+import { ManicureService } from './services/manicure.service';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,7 @@ import { HairService } from './services/hair.service';
     UserProfileComponent,
     HairDetailsComponent,
     ManicureDetailsComponent,
-    SortingPipePipe
+    SortingPipe
   ],
   imports: [
     BrowserModule,
@@ -37,7 +38,7 @@ import { HairService } from './services/hair.service';
     AppRoutingModule,
     MaterialModule.forRoot(),
   ],
-  providers: [HairService],
+  providers: [HairService, ManicureService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

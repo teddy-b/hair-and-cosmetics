@@ -15,7 +15,6 @@ export class HairComponent implements OnInit {
 
   ngOnInit() {
     this.hairOffers = this.hairService.getAll();
-    console.log(this.hairOffers);
   }
 
 

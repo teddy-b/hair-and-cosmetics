@@ -5,6 +5,6 @@ export interface OfferModel {
     Image: string;
     Description: string;
     Price: string;
-    StudioUrl: string;
+    Url: string;
     Date: string;
 }

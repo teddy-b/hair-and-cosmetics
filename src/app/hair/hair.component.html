@@ -11,8 +11,8 @@
   <p> Selected value:  </p>
 </form></div>
 
-<!--<div id="hair-main" *ngFor="let offer of hairOffers" >
-  <md-card class="example-card">
+<div id="hair-main" >
+  <md-card class="example-card" *ngFor="let offer of hairOffers" >
     <md-card-header>
       <div md-card-avatar class="example-header-image"></div>
       <md-card-title>{{offer.StudioName}}</md-card-title>
@@ -29,17 +29,6 @@
       <a [routerLink]="['/hair', offer.Id]" class="btn" md-raised-button color="accent">Details</a>
     </md-card-actions>
   </md-card>
-</div>-->
-<div *ngFor="let offer of hairOffers" >
-      <p>{{offer.StudioName}}</p>
-      <small>Hair studios</small>
-    <img  src="{{offer.Image}}">
-      <p>
-        {{offer.Title}}
-      </p>
-      <strong>Price: </strong> <span> {{offer.Price}} $</span>
-      <a [routerLink]="['/hair', offer.Id]" >Details</a>
-
 </div>
 
 
