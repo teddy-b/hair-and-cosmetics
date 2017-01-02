@@ -20,6 +20,9 @@ import { SortingPipe } from './Pipes/sorting-pipe.pipe';
 import { HairService } from './services/hair.service';
 import { ManicureService } from './services/manicure.service';
 import { DecimalPipe } from './Pipes/decimal.pipe';
+import { AboutComponent } from './about/about.component';
+import { HighlightDirective } from './highlight.directive';
+import { TermsComponent } from './terms/terms.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +34,10 @@ import { DecimalPipe } from './Pipes/decimal.pipe';
     HairDetailsComponent,
     ManicureDetailsComponent,
     SortingPipe,
-    DecimalPipe
+    DecimalPipe,
+    AboutComponent,
+    HighlightDirective,
+    TermsComponent
   ],
   imports: [
     BrowserModule,

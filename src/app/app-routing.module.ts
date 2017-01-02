@@ -7,6 +7,8 @@ import { HairDetailsComponent } from './hair/hair-details/hair-details.component
 import { ManicureComponent } from './manicure/manicure.component';
 import { ManicureDetailsComponent } from './manicure/manicure-details/manicure-details.component';
 import { UserProfileComponent } from './user-profile/user-profile.component';
+import { AboutComponent } from './about/about.component';
+import { TermsComponent } from './terms/terms.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -16,6 +18,8 @@ const routes: Routes = [
   { path: 'manicure', component: ManicureComponent },
   { path: 'manicure/:id', component: ManicureDetailsComponent },
   { path: 'profile', component: UserProfileComponent },
+   { path: 'about', component: AboutComponent },
+   { path: 'terms', component: TermsComponent }
 ];
 
 @NgModule({
