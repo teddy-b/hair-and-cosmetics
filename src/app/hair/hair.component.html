@@ -36,12 +36,12 @@
       <p>
         {{offer.Title}}
       </p>
-      <div class="bold">Price: <span class="price"> {{offer.Price}} $</span></div>
+      <div class="bold">Price: <span class="price"> {{offer.Price | decimal }} $</span></div>
     </md-card-content>
     <md-card-actions>
       <a [routerLink]="['/hair', offer.Id]" class="btn" md-raised-button color="accent">Details</a>
     <button md-button>LIKE</button>
-    <button md-button>BYE</button>
+    <button md-button>BUY</button>
     </md-card-actions>
     <!--<md-card-footer>
       <div>Date of publish: {{offer.Date}}</div>
