@@ -21,7 +21,7 @@ const routes: Routes = [
   { path: 'manicure/:id', component: ManicureDetailsComponent },
   { path: 'profile', component: UserProfileComponent },
   { path: 'login', component: LoginComponent },
-  { path: 'register', component: RegisterComponent }
+  { path: 'register', component: RegisterComponent },
    { path: 'about', component: AboutComponent },
    { path: 'terms', component: TermsComponent }
 ];

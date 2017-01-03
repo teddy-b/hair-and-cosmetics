@@ -36,7 +36,7 @@ import { TermsComponent } from './terms/terms.component';
     HairDetailsComponent,
     ManicureDetailsComponent,
     LoginComponent,
-    RegisterComponent
+    RegisterComponent,
     SortingPipe,
     DecimalPipe,
     AboutComponent,
