@@ -6,6 +6,7 @@ import { ManicureService } from '../../services/manicure.service';
 import { UserService } from '../../services/user.service';
 
 const BUY_SUCCESS: string = 'Successfully added to your offers!';
+const BUY_ERROR: string = 'You have to be logged in to buy this offer!';
 
 @Component({
   selector: 'app-manicure-details',
@@ -30,7 +31,11 @@ export class ManicureDetailsComponent implements OnInit {
   }
 
   buy(offer) {
-    this.userService.buy(offer);
-    this.snackBar.open(BUY_SUCCESS, '', { duration: 3000 });
+    if (this.userService.getLoggedUser()) {
+      this.userService.buy(offer);
+      this.snackBar.open(BUY_SUCCESS, '', { duration: 3000 });
+    } else {
+      this.snackBar.open(BUY_ERROR, '', { duration: 3000 });
+    }
   }
 }
