@@ -33,4 +33,16 @@
     </md-toolbar>
   </div>
   <router-outlet></router-outlet>
+  <footer class="footer">
+    <div class="container">
+      <p class="text-muted">
+        <small appHighlight>
+          <a [routerLink]="['/terms']">Terms and conditions</a>
+        </small>
+        <small appHighlight>
+          <a [routerLink]="['/about']">About</a>
+        </small>
+      </p>
+    </div>
+  </footer>
 </md-sidenav-container>

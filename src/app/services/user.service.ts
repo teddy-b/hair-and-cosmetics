@@ -1,16 +1,19 @@
-import { Injectable } from '@angular/core';
-import { UserModel } from '../models/user-model';
+import {Injectable} from '@angular/core';
+import {UserModel} from '../models/user-model';
 
 const USERS: UserModel[] = [];
 const USER: UserModel = {email: '', password: ''};
+const OFFERS = [];
 
 @Injectable()
 export class UserService {
   currentUser: UserModel = USER;
   loggedUser: string = '';
   users: UserModel[] = USERS;
+  offers = OFFERS;
 
-  constructor() { }
+  constructor() {
+  }
 
   getLoggedUser(): string {
     this.loggedUser = localStorage.getItem('h-and-c-user');
@@ -39,5 +42,13 @@ export class UserService {
 
   logout(): void {
     localStorage.removeItem('h-and-c-user');
+  }
+
+  buy(offer) {
+    this.offers.push(offer);
+  }
+
+  getOffers() {
+    return this.offers;
   }
 }

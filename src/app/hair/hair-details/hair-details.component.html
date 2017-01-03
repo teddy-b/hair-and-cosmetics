@@ -14,12 +14,14 @@
       <p>
         {{offer.Description}}
       </p>
-      
+
       <div class="bold">Price: <span class="price"> {{offer.Price}} $</span></div>
-      
+
     </md-card-content>
     <md-card-actions>
-      <span class="url"><a href="{{offer.Url}}" md-raised-button color="accent" >Visit {{offer.StudioName}} Site!</a></span>
+      <button md-raised-button color="accent" (click)="this.buy(this.offer)">BUY</button>
+      <button md-raised-button>LIKE</button>
+      <span class="url"><a href="{{offer.Url}}" md-raised-button>Visit {{offer.StudioName}} Site!</a></span>
     </md-card-actions>
     <md-card-footer>
       <div>Date of publish: {{offer.Date}}</div>

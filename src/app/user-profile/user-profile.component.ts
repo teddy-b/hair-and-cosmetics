@@ -11,16 +11,19 @@ import { UserModel } from '../models/user-model';
 export class UserProfileComponent implements OnInit {
   loggedUser: string = '';
   currentUser: UserModel;
+  offers;
 
   constructor(private userService: UserService) { }
 
   ngOnInit() {
     this.loggedUser = this.userService.getLoggedUser();
     this.currentUser = this.userService.getUser();
+    this.offers = this.userService.getOffers();
   }
 
   ngDoCheck() {
     this.loggedUser = this.userService.getLoggedUser();
     this.currentUser = this.userService.getUser();
+    this.offers = this.userService.getOffers();
   }
 }

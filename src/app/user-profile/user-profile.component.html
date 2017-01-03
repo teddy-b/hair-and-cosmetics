@@ -1,5 +1,5 @@
 <div class="user-profile" [hidden]="!this.loggedUser">
-  <md-card class="example-card">
+  <md-card class="profile-card">
     <md-card-header>
       <div md-card-avatar class="example-header-image">
         <i class="material-icons">account_circle</i>
@@ -21,7 +21,25 @@
           <i class="material-icons">border_color</i>
         </a>
       </p>
-      <button md-raised-button>My offers</button>
     </md-card-content>
   </md-card>
+  <h3 class="h3">My offers</h3>
+  <div id="profile-offers">
+    <md-card class="offer-card" *ngFor="let offer of this.offers" >
+      <md-card-header>
+        <div md-card-avatar class="example-header-image"></div>
+        <md-card-title>{{offer.StudioName}}</md-card-title>
+        <md-card-subtitle>Hair studios</md-card-subtitle>
+      </md-card-header>
+      <img md-card-image src="{{offer.Image}}" [routerLink]="['/hair', offer.Id]" style="cursor:pointer">
+      <md-card-content>
+        <p>{{offer.Title}}</p>
+        <div class="bold">Price: <span class="price"> {{offer.Price | decimal }} $</span></div>
+      </md-card-content>
+      <md-card-actions>
+        <a [routerLink]="['/hair', offer.Id]" class="btn" md-raised-button color="accent">Details</a>
+        <button md-button>LIKE</button>
+      </md-card-actions>
+    </md-card>
+  </div>
 </div>

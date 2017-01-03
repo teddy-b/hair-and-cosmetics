@@ -1,37 +1,37 @@
 <p class="h1">
   Haircut offers
 </p>
-  <!--<div><form class="selectSort">
-  <md-select placeholder="Sort" [(ngModel)]="selectedValue" name="food">
-    <md-option *ngFor="let food of foods" [value]="food.value">
-     <p> {{food.viewValue}}</p>
-    </md-option>
-  </md-select>
+<!--<div><form class="selectSort">
+<md-select placeholder="Sort" [(ngModel)]="selectedValue" name="food">
+  <md-option *ngFor="let food of foods" [value]="food.value">
+   <p> {{food.viewValue}}</p>
+  </md-option>
+</md-select>
 
-  <p> Selected value:  </p>
+<p> Selected value:  </p>
 </form></div>-->
 
 <div class="input-group">
-    <label for="sort">Sort:</label>
-    <select class="form-control" name="sort" (change)="onSort($event)">
-        <option *ngFor="let property of sortBy"  [selected]="sortingBy===property" value="{{property}}">{{property}}</option>
-    </select>
+  <label for="sort">Sort:</label>
+  <select class="form-control" name="sort" (change)="onSort($event)">
+    <option *ngFor="let property of sortBy" [selected]="sortingBy===property" value="{{property}}">{{property}}</option>
+  </select>
 </div>
 <div class="input-group">
-    <label for="order">Order:</label>
-    <select class="form-control" name="order" (change)="onOrder($event)">
-        <option *ngFor="let order of orderBy" [selected]="orderingBy===order" value="{{order}}">{{order}}</option>
-    </select>
+  <label for="order">Order:</label>
+  <select class="form-control" name="order" (change)="onOrder($event)">
+    <option *ngFor="let order of orderBy" [selected]="orderingBy===order" value="{{order}}">{{order}}</option>
+  </select>
 </div>
 
-<div id="hair-main" >
-  <md-card class="example-card" *ngFor="let offer of (hairOffers | sortingPipe:[sortingBy, orderingBy])" >
+<div id="hair-main">
+  <md-card class="example-card" *ngFor="let offer of (hairOffers | sortingPipe:[sortingBy, orderingBy])">
     <md-card-header>
       <div md-card-avatar class="example-header-image"></div>
       <md-card-title>{{offer.StudioName}}</md-card-title>
       <md-card-subtitle>Hair studios</md-card-subtitle>
     </md-card-header>
-    <img md-card-image src="{{offer.Image}}">
+    <img md-card-image src="{{offer.Image}}" [routerLink]="['/hair', offer.Id]" style="cursor:pointer">
     <md-card-content>
       <p>
         {{offer.Title}}
@@ -40,14 +40,11 @@
     </md-card-content>
     <md-card-actions>
       <a [routerLink]="['/hair', offer.Id]" class="btn" md-raised-button color="accent">Details</a>
-    <button md-button>LIKE</button>
-    <button md-button>BUY</button>
+      <button md-button (click)="this.buy(offer)">BUY</button>
+      <button md-button>LIKE</button>
     </md-card-actions>
     <!--<md-card-footer>
       <div>Date of publish: {{offer.Date}}</div>
     </md-card-footer>-->
   </md-card>
 </div>
-
-
-  
