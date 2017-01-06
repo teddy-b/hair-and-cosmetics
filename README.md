@@ -10,6 +10,10 @@ This project was generated with [angular-cli](https://github.com/angular/angular
 | Ангелина Грозданова | grozdanova  | [grozdanova](https://github.com/grozdanova) |
 | Йовко Господинов | yovko.gospodinov | [YovkoGospodinov](https://github.com/YovkoGospodinov) |
 
+## Demo
+
+[Hair & Cosmetics](https://teddy-b.github.io/hair-and-cosmetics)
+
 ## Development server
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
