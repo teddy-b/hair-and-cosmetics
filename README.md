@@ -1,18 +1,32 @@
-# Course Project - SPA Applications with Angular 2 - 2016 - Hair And Cosmetics Site
+# Hair And Cosmetics
 
-This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.24.
+Telerik Academy - Course Project - SPA Applications with Angular 2 - 2016
 
-## Team "Directive12" Members
+*This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.24.*
 
-| Name | NickName | GitHub |
+## Description
+
+Angular 2 application for services and deals offered by beauty studios.
+
+## Team Members
+
+| Name | Telerik Academy Nickname | GitHub |
 | :------------- | :------------------- | :------------------------------------------|
-| Теодора Бонева | teddyboneva  | [Teodora Boneva](https://github.com/teddy-b) |
-| Ангелина Грозданова | grozdanova  | [grozdanova](https://github.com/grozdanova) |
-| Йовко Господинов | yovko.gospodinov | [YovkoGospodinov](https://github.com/YovkoGospodinov) |
+| Teodora Boneva | [teddyboneva](https://telerikacademy.com/Users/teddyboneva) | [teddy-b](https://github.com/teddy-b) |
+| Angelina Grozdanova | [grozdanova](https://telerikacademy.com/Users/grozdanova) | [grozdanova](https://github.com/grozdanova) |
+| Yovko Gospodinov | [yovko.gospodinov](https://telerikacademy.com/Users/yovko.gospodinov) | [YovkoGospodinov](https://github.com/YovkoGospodinov) |
 
 ## Demo
 
 [Hair & Cosmetics](https://teddy-b.github.io/hair-and-cosmetics)
+
+## Technologies
+
+Angular 2, Angular-CLI, Angular Router, Typescript, Angular Material Design, SASS, Eslint, 
+
+## Tools
+
+Git (GitHub), Command Prompt, Node Package Manager, Webstorm, Visual Studio Code
 
 ## Development server
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
