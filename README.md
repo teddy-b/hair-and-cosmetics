@@ -20,13 +20,25 @@ Angular 2 application for services and deals offered by beauty studios.
 
 [Hair & Cosmetics](https://teddy-b.github.io/hair-and-cosmetics)
 
-## Technologies
+## Technology stack
 
-Angular 2, Angular-CLI, Angular Router, Typescript, Angular Material Design, SASS, Eslint
+**Technologies**
 
-## Tools
+* Angular 2
+* Angular-CLI
+* Angular Router
+* Typescript
+* Angular Material Design
+* SASS
+* Eslint
 
-Git (GitHub), Command Prompt, Node Package Manager, Webstorm, Visual Studio Code
+**Tools**
+
+* Git (GitHub)
+* Command Prompt
+* Node Package Manager
+* Webstorm
+* Visual Studio Code
 
 ## Development server
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
