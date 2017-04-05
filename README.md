@@ -22,7 +22,7 @@ Angular 2 application for services and deals offered by beauty studios.
 
 ## Technologies
 
-Angular 2, Angular-CLI, Angular Router, Typescript, Angular Material Design, SASS, Eslint, 
+Angular 2, Angular-CLI, Angular Router, Typescript, Angular Material Design, SASS, Eslint
 
 ## Tools
 
